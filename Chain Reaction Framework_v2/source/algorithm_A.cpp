@@ -130,7 +130,7 @@ void algorithm_A(Board board, Player player, int index[]){
                 //Next round
                 int score = minimax(currentBoard, player, color, -INFINITY, INFINITY, maximumDepth, false);
                 //Select maximizing step
-                if (score > bestScore){
+                if (score >= bestScore){
                     bestScore = score;
                     index[0] = i;
                     index[1] = j;
